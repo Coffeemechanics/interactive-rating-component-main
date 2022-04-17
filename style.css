@@ -196,8 +196,4 @@ body {
     width: 17.0625rem;
     margin-top: 1rem;
   }
-  .active {
-    background-color: var(--light_grey);
-    color: var(--white);
-  }
 }
