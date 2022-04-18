@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll(".rating");
 const front_card = document.querySelector(".star-text");
 const back_card = document.querySelector(".back-card");
 const score = document.querySelector(".score");
-let rating_score = 1;
+let rating_score = null;
 
 submit.addEventListener("click", clickSubmit);
 
@@ -12,6 +12,7 @@ buttons.forEach((btn) => {
 });
 
 function clickSubmit() {
+  if (!rating_score) return;
   front_card.classList.add("hide");
   score.textContent = " " + rating_score + " ";
   back_card.classList.remove("hide");
