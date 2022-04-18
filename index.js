@@ -12,7 +12,10 @@ buttons.forEach((btn) => {
 });
 
 function clickSubmit() {
-  if (!rating_score) return;
+  if (!rating_score) {
+    alert("Please select a rate.");
+    return;
+  }
   front_card.classList.add("hide");
   score.textContent = " " + rating_score + " ";
   back_card.classList.remove("hide");
